@@ -1,16 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --color-primary: 278deg 92% 18%;
-    --color-secondary: 62deg 56% 54%;
+    --color-background: 0deg 0% 100%;
+    --color-text: 222deg 47% 11%;
+    --color-accent1: hsl(271deg, 81%, 56%);
+    --color-accent2: hsl(22deg, 100%, 60%);
+    --color-accent1: 271deg 81% 56%;
+    --color-accent2: 22deg 100% 60%;
   }
 
   :root[data-theme='dark'] {
-    --color-primary: 62deg 56% 54%;
-    --color-secondary: 278deg 92% 18%;
+    --color-background: 222deg 47% 11%;
+    --color-text: 0deg 0% 100%;
   }
 
   *,
@@ -21,9 +27,17 @@
     padding: 0;
   }
 
+  #root {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+  }
+
   body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Urbanist', sans-serif;
     -webkit-font-smoothing: antialiased;
+    background-color: hsl(var(--color-background));
+    color: hsl(var(--color-text));
   }
 
   img,

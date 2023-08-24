@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
@@ -5,10 +6,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: 'hsl(var(--color-primary) / <alpha-value>)',
-        secondary: 'hsl(var(--color-secondary) / <alpha-value>)',
+        background: 'hsl(var(--color-background) / <alpha-value>)',
+        text: 'hsl(var(--color-text) / <alpha-value>)',
+        accent1: 'hsl(var(--color-accent1) / <alpha-value>)',
+        accent2: 'hsl(var(--color-accent2) / <alpha-value>)',
       },
     },
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 };
