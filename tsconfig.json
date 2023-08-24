@@ -8,6 +8,7 @@
     "paths": {
       "@ui/*": ["./src/components/ui/*"],
       "@pages/*": ["./src/components/pages/*"],
+      "@sections/*": ["./src/components/sections/*"],
       "@components/*": ["./src/components/*"]
     },
 
