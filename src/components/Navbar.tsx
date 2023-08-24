@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
     <nav className='border-0 border-b-2 border-text/10 md:border-0'>
-      <div className='flex flex-wrap items-center justify-between max-w-6xl p-4 mx-auto md:px-10'>
+      <div className='flex flex-wrap items-center justify-between max-w-6xl p-4 mx-auto md:px-10 md:py-5'>
         <a
           href='/'
           className='flex items-center focus:outline-none ring-offset-8 ring-offset-background/[0.85] focus-visible:ring-4 ring-accent1 rounded'>

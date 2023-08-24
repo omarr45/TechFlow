@@ -53,4 +53,10 @@
   select {
     font: inherit;
   }
+
+  @media (min-width: 450px) {
+    html {
+      scrollbar-gutter: stable;
+    }
+  }
 }
