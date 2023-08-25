@@ -19,7 +19,7 @@ const Footer = () => {
         <li title='GitHub'>
           <a
             className='hover:text-accent1'
-            href='https://www.github.com/omarr45/'
+            href='https://www.github.com/omarr45/TechFlow'
             target='_blank'
             aria-label='GitHub Account'>
             <Icon icon='simple-icons:github' fontSize={24} />
