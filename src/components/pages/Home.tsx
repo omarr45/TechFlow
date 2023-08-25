@@ -1,6 +1,7 @@
 import Clients from '@sections/Clients';
 import GetStarted from '@sections/GetStarted';
 import Hero from '@sections/Hero';
+import PricingPlans from '@sections/PricingPlans';
 import Testimonials from '@sections/Testimonials';
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
       <Clients />
       <Testimonials />
       <GetStarted />
+      <PricingPlans />
     </main>
   );
 };
