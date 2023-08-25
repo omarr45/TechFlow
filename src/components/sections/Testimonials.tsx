@@ -48,7 +48,7 @@ const testimonials: testimonial[] = [
 
 const Testimonials = () => {
   return (
-    <section className='max-w-6xl mx-auto my-6 space-y-4 md:space-y-8 md:my-12'>
+    <section className='max-w-6xl py-6 mx-auto space-y-4 md:space-y-8 md:my-12'>
       <h2 className='text-3xl font-bold md:text-5xl'>Our clients say</h2>
       <ul className='grid grid-cols-[repeat(auto-fill,minmax(18rem,1fr))] gap-4'>
         {testimonials.map((tst) => (
