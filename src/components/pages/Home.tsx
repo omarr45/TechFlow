@@ -1,4 +1,5 @@
 import Clients from '@sections/Clients';
+import GetStarted from '@sections/GetStarted';
 import Hero from '@sections/Hero';
 import Testimonials from '@sections/Testimonials';
 
@@ -8,6 +9,7 @@ const Home = () => {
       <Hero />
       <Clients />
       <Testimonials />
+      <GetStarted />
     </main>
   );
 };
