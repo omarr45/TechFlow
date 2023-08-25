@@ -14,7 +14,12 @@ const Testimonial = ({ testimonial: tst }: testProps) => {
   return (
     <li className='p-4 space-y-3 text-left border-2 md:space-y-2 rounded-2xl bg-gradient-to-br from-accent1/20 to-text/5 border-text/5'>
       <div className='flex items-center justify-start gap-4'>
-        <img className='w-16 h-16 rounded-full' src={tst.img} alt={tst.name} />
+        <img
+          className='w-16 h-16 rounded-full'
+          loading='lazy'
+          src={tst.img}
+          alt={tst.name}
+        />
         <div>
           <p className='text-lg font-bold'>{tst.name}</p>
           <p className='text-sm'>

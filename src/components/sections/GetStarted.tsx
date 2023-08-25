@@ -13,35 +13,40 @@ const GetStarted = () => {
         <li>
           <img
             className='w-10 h-10 transition-transform rounded-full hover:scale-105'
-            src='/mark.jpg'
+            src='/mark.webp'
+            loading='lazy'
             alt='Mark'
           />
         </li>
         <li>
           <img
             className='relative z-10 transition-transform rounded-full hover:scale-105 w-14 h-14'
-            src='/alex.jpg'
+            src='/alex.webp'
+            loading='lazy'
             alt='Alex'
           />
         </li>
         <li>
           <img
             className='hover:scale-105 transition-transform relative z-20 w-[4.5rem] h-[4.5rem] rounded-full'
-            src='/tarek.jpg'
+            src='/tarek.webp'
+            loading='lazy'
             alt='Tarek'
           />
         </li>
         <li>
           <img
             className='relative z-10 transition-transform rounded-full hover:scale-105 w-14 h-14'
-            src='/kevin.jpg'
+            src='/kevin.webp'
+            loading='lazy'
             alt='Kevin'
           />
         </li>
         <li>
           <img
             className='w-10 h-10 transition-transform rounded-full hover:scale-105'
-            src='/benjamin.jpg'
+            src='/benjamin.webp'
+            loading='lazy'
             alt='Benjamin'
           />
         </li>
