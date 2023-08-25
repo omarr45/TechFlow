@@ -6,6 +6,7 @@ import logo from '/logo.svg';
 
 const Navbar = () => {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
@@ -34,16 +35,15 @@ const Navbar = () => {
         <a
           href='/'
           className='flex items-center focus:outline-none ring-offset-8 ring-offset-background/[0.85] focus-visible:ring-4 ring-accent1 rounded'>
-          <img src={logo} className='h-8 mr-3' alt='Flowbite Logo' />
+          <img src={logo} className='h-8 mr-3' alt='TechFLow Pro Logo' />
           <span className='self-center text-2xl font-bold whitespace-nowrap'>
             TechFlow Pro
           </span>
         </a>
         <button
-          data-collapse-toggle='navbar-default'
+          onClick={() => setIsOpen(!isOpen)}
           type='button'
           className='inline-flex items-center justify-center w-10 h-10 p-2 text-sm rounded-lg md:hidden hover:bg-text/10 focus:outline-none focus:ring-2 focus:ring-text/30'
-          aria-controls='navbar-default'
           aria-expanded='false'>
           <span className='sr-only'>Open main menu</span>
           <svg
@@ -61,14 +61,16 @@ const Navbar = () => {
             />
           </svg>
         </button>
-        <div className='hidden w-full md:block md:w-auto' id='navbar-default'>
-          <ul className='relative flex flex-col items-start justify-center p-2 mt-4 font-medium rounded-lg md:items-center md:p-0 bg-text/10 md:flex-row md:space-x-8 md:mt-0 md:bg-transparent'>
-            <Link link='#'>Features</Link>
-            <Link link='#'>Reviews</Link>
-            <Link link='#'>Pricing</Link>
-            <ThemeToggle onClick={handleThemeChange} theme={theme} />
-          </ul>
-        </div>
+        {isOpen && (
+          <div className='w-full md:block md:w-auto'>
+            <ul className='relative flex flex-col items-start justify-center p-2 mt-4 font-medium rounded-lg md:items-center md:p-0 bg-text/10 md:flex-row md:space-x-8 md:mt-0 md:bg-transparent'>
+              <Link link='#'>Features</Link>
+              <Link link='#'>Reviews</Link>
+              <Link link='#'>Pricing</Link>
+              <ThemeToggle onClick={handleThemeChange} theme={theme} />
+            </ul>
+          </div>
+        )}
       </div>
     </nav>
   );

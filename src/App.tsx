@@ -1,5 +1,3 @@
-import 'flowbite';
-
 import Footer from '@components/Footer';
 import Home from '@pages/Home';
 import Navbar from '@components/Navbar';
