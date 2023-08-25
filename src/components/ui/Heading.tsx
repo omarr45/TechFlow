@@ -1,5 +1,5 @@
 type HeadingOwnProps<E extends React.ElementType> = {
-  size: 'sm' | 'md' | 'lg' | 'xl';
+  size: 'sm' | 'md' | 'lg' | 'xl' | '2xl';
   children: React.ReactNode;
   as?: E;
 };
@@ -12,6 +12,7 @@ const classes = {
   md: 'text-3xl font-bold md:text-5xl',
   lg: 'text-4xl font-bold md:text-6xl',
   xl: 'text-5xl font-bold md:text-7xl',
+  '2xl': 'text-5xl sm:text-6xl font-bold md:text-8xl',
 };
 
 const Heading = <E extends React.ElementType>({
