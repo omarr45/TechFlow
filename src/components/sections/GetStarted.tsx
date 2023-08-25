@@ -52,7 +52,7 @@ const GetStarted = () => {
       </p>
       <div className='flex flex-col items-center justify-center w-full gap-4 md:flex-row md:gap-6'>
         <Button intent='primary'>Get Started</Button>
-        <Button intent='secondary'>Learn More</Button>
+        <Button intent='ghost'>Learn More</Button>
       </div>
     </section>
   );

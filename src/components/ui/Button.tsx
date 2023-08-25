@@ -12,7 +12,9 @@ const btn = cva('button', {
       primary:
         'bg-accent1 hover:bg-accent1/80 text-white focus-visible:ring-accent1 ',
       secondary:
-        'bg-text/10 hover:bg-text/20 border border-text/20 focus-visible:ring-text/30 ',
+        'bg-accent2 hover:bg-accent2/80 text-white focus-visible:ring-accent2 ',
+      ghost:
+        'bg-text/5 hover:bg-text/20 border border-text/20 focus-visible:ring-text/30 ',
     },
   },
   defaultVariants: {
