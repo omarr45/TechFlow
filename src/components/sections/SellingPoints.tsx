@@ -1,3 +1,5 @@
+import Heading from '@ui/Heading';
+
 type SellingPoint = {
   title: string;
   description: string;
@@ -24,9 +26,12 @@ const points: SellingPoint[] = [
 const SellingPoints = () => {
   return (
     <section className='grid max-w-6xl grid-cols-1 gap-8 py-8 mx-auto my-12 text-center border-0 md:grid-cols-3 md:my-24 border-y-2 border-text/20'>
+      <h2 className='sr-only'>Selling Points</h2>
       {points.map((point) => (
         <div key={point.title} className='space-y-2'>
-          <h3 className='text-2xl font-bold md:text-3xl'>{point.title}</h3>
+          <Heading size='sm' as='h3' className='md:text-3xl'>
+            {point.title}
+          </Heading>
           <p className='text-sm text-text/80 md:text-base'>
             {point.description}
           </p>
