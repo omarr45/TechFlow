@@ -1,4 +1,5 @@
 import Button from '@ui/Button';
+import Heading from '@ui/Heading';
 
 const GetStarted = () => {
   return (
@@ -45,7 +46,9 @@ const GetStarted = () => {
           />
         </li>
       </ul>
-      <h2 className='text-3xl font-bold md:text-5xl'>Get started now</h2>
+      <Heading size='md' as='h2'>
+        Get started now
+      </Heading>
       <p className='md:text-lg text-text/80'>
         Be part of millions people around the world using{' '}
         <strong>TechFlow Pro</strong> for digital transformation.

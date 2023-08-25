@@ -1,3 +1,4 @@
+import Heading from '@ui/Heading';
 import Testimonial from '@components/Testimonial';
 import type { testimonial } from '@components/Testimonial';
 
@@ -49,7 +50,10 @@ const testimonials: testimonial[] = [
 const Testimonials = () => {
   return (
     <section className='max-w-6xl py-6 mx-auto space-y-4 md:space-y-8 md:my-12'>
-      <h2 className='text-3xl font-bold md:text-5xl'>Our clients say</h2>
+      <Heading size='md' as='h2'>
+        Our clients say
+      </Heading>
+
       <ul className='grid grid-cols-[repeat(auto-fill,minmax(18rem,1fr))] gap-4'>
         {testimonials.map((tst) => (
           <Testimonial testimonial={tst} key={tst.name} />

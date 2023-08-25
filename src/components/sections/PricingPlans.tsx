@@ -1,5 +1,7 @@
 import PricingPlan, { PricingPlanType } from '@components/PricingPlan';
 
+import Heading from '@ui/Heading';
+
 const plans: PricingPlanType[] = [
   {
     id: 1,
@@ -44,7 +46,9 @@ const plans: PricingPlanType[] = [
 const PricingPlans = () => {
   return (
     <section className='relative py-6 space-y-4 md:space-y-6 md:py-12'>
-      <h2 className='text-3xl font-bold md:text-5xl'>Pricing Plans</h2>
+      <Heading size='md' as='h2'>
+        Pricing plans
+      </Heading>
       <ul className='grid max-w-4xl grid-cols-1 gap-4 pt-4 mx-auto md:grid-cols-3'>
         <PricingPlan plan={plans[0]} intent='ghost' />
         <PricingPlan plan={plans[1]} intent='primary' featured={true} />

@@ -1,4 +1,5 @@
 import Button from '@ui/Button';
+import Heading from '@ui/Heading';
 
 const Hero = () => {
   return (
@@ -8,9 +9,9 @@ const Hero = () => {
         className='absolute right-20 -left-40 -top-[38rem] blur-3xl opacity-[0.15] -z-20 md:left-0'>
         <div className='bg-accent1 h-[40rem]'></div>
       </div>
-      <h1 className='max-w-3xl mx-auto text-5xl font-bold md:text-7xl'>
+      <Heading as='h1' size='xl' className='max-w-3xl mx-auto'>
         Streamlining your digital journey.
-      </h1>
+      </Heading>
       <p className='text-text/60 [text-wrap:balance] md:text-xl max-w-3xl mx-auto'>
         The ultimate all-in-one solution for businesses seeking seamless digital
         transformation. From project management and collaboration to data

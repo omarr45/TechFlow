@@ -1,4 +1,5 @@
 import Button from '@ui/Button';
+import Heading from '@ui/Heading';
 import { cva, type VariantProps } from 'class-variance-authority';
 
 export type PricingPlanType = {
@@ -49,7 +50,9 @@ const PricingPlan: React.FC<PricingPlanProps> = ({
   ...rest
 }) => (
   <li className={btn({ intent, featured, className })} {...rest}>
-    <h3 className='text-2xl font-bold uppercase'>{plan.name}</h3>
+    <Heading as='h3' size='sm' className='uppercase'>
+      {plan.name}
+    </Heading>
     <p>{plan.description}</p>
     <div>
       <p className='text-5xl font-semibold'>${plan.price}</p>
