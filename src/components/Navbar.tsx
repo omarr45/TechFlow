@@ -61,16 +61,17 @@ const Navbar = () => {
             />
           </svg>
         </button>
-        {isOpen && (
-          <div className='w-full md:block md:w-auto'>
-            <ul className='relative flex flex-col items-start justify-center p-2 mt-4 font-medium rounded-lg md:items-center md:p-0 bg-text/10 md:flex-row md:space-x-8 md:mt-0 md:bg-transparent'>
-              <Link link='#'>Features</Link>
-              <Link link='#'>Reviews</Link>
-              <Link link='#'>Pricing</Link>
-              <ThemeToggle onClick={handleThemeChange} theme={theme} />
-            </ul>
-          </div>
-        )}
+        <div
+          className={`${
+            isOpen ? 'block' : 'hidden'
+          } w-full md:block md:w-auto`}>
+          <ul className='relative flex flex-col items-start justify-center p-2 mt-4 font-medium rounded-lg md:items-center md:p-0 bg-text/10 md:flex-row md:space-x-8 md:mt-0 md:bg-transparent'>
+            <Link link='#'>Features</Link>
+            <Link link='#'>Reviews</Link>
+            <Link link='#'>Pricing</Link>
+            <ThemeToggle onClick={handleThemeChange} theme={theme} />
+          </ul>
+        </div>
       </div>
     </nav>
   );
