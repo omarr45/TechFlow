@@ -3,7 +3,7 @@ import type { testimonial } from '@components/Testimonial';
 
 const testimonials: testimonial[] = [
   {
-    desc: 'TechFlow Pro revolutionized how we manage projects. Our productivity has skyrocketed, and deadlines are no longer a source of stress.',
+    desc: 'TechFlow Pro revolutionized how we manage projects. Our productivity has skyrocketed, and deadlines are no longer a source of stress. We are now able to deliver projects on time, every time.',
     name: 'Tarek T.',
     title: 'CEO',
     org: 'Innovatech Solutions',
@@ -17,7 +17,7 @@ const testimonials: testimonial[] = [
     img: '/mark.jpg',
   },
   {
-    desc: 'The automation features of TechFlow Pro saved us countless hours on repetitive tasks. We can now focus on strategic initiatives that truly matter.',
+    desc: 'The automation features of TechFlow Pro saved us countless hours on repetitive tasks. We can now focus on strategic initiatives that truly matter. Our team is more motivated than ever before.',
     name: 'Benjamin L.',
     title: 'Operations Manager',
     org: 'NexaCore',
@@ -31,7 +31,7 @@ const testimonials: testimonial[] = [
     img: '/alex.jpg',
   },
   {
-    desc: 'TechFlow Pro has simplified our complex workflows. With its intuitive interface and powerful features, even our non-technical team members feel confident using it.',
+    desc: 'TechFlow Pro has simplified our complex workflows. With its intuitive interface and powerful features, even our non-technical team members feel confident using it for their daily tasks.',
     name: 'John W.',
     title: 'Marketing Manager',
     org: 'NovaSync',
