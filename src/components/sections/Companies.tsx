@@ -1,9 +1,8 @@
 import { Icon } from '@iconify/react';
 
-const Clients = () => {
+const Companies = () => {
   return (
-    <section className=''>
-      {/* <section>3 parts</section> */}
+    <section className='pb-8 md:pb-16'>
       <section className='grid max-w-4xl grid-cols-2 gap-10 p-6 mx-auto md:p-10 md:grid-cols-3 place-items-center'>
         <div className='transition-[filter] hover:grayscale-0 grayscale'>
           <Icon icon='logos:google' fontSize={30} />
@@ -28,4 +27,4 @@ const Clients = () => {
   );
 };
 
-export default Clients;
+export default Companies;

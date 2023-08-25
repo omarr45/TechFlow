@@ -2,7 +2,7 @@ import Button from '@ui/Button';
 
 const Hero = () => {
   return (
-    <section className='relative my-12 space-y-8 md:my-16'>
+    <section className='relative my-12 space-y-8 md:my-24'>
       <div
         aria-hidden={true}
         className='absolute right-20 -left-40 -top-[38rem] blur-3xl opacity-[0.15] -z-20 md:left-0'>

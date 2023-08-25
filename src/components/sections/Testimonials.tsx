@@ -20,7 +20,7 @@ const testimonials: testimonial[] = [
     desc: 'The automation features of TechFlow Pro saved us countless hours on repetitive tasks. We can now focus on strategic initiatives that truly matter.',
     name: 'Benjamin L.',
     title: 'Operations Manager',
-    org: 'NexaCore Enterprises',
+    org: 'NexaCore',
     img: '/benjamin.jpg',
   },
   {
@@ -34,14 +34,14 @@ const testimonials: testimonial[] = [
     desc: 'TechFlow Pro has simplified our complex workflows. With its intuitive interface and powerful features, even our non-technical team members feel confident using it.',
     name: 'John W.',
     title: 'Marketing Manager',
-    org: 'NovaSync Inc',
+    org: 'NovaSync',
     img: '/john.jpg',
   },
   {
     desc: 'We were amazed by how quickly we saw results after implementing TechFlow Pro. The automation tools not only saved time but also reduced errors, leading to increased customer satisfaction.',
     name: 'Kevin S.',
     title: 'Operations Director',
-    org: 'Streamline Logistics',
+    org: 'Streamline',
     img: '/kevin.jpg',
   },
 ];
