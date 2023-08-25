@@ -2,7 +2,7 @@ import { Icon } from '@iconify/react';
 
 const Footer = () => {
   return (
-    <footer className='flex flex-col items-center justify-between w-full max-w-6xl gap-4 p-4 mx-auto text-center md:flex-row'>
+    <footer className='flex flex-col items-center justify-between w-full max-w-6xl gap-4 p-4 mx-auto text-center border-t-2 md:flex-row border-text/10'>
       <p>Copyright &copy; {new Date().getFullYear()} - TechFlow Pro</p>
       <ul
         className='flex items-center justify-center gap-4 text-text'

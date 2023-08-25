@@ -2,7 +2,7 @@ import Button from '@ui/Button';
 
 const GetStarted = () => {
   return (
-    <section className='relative py-12 space-y-4 md:space-y-6 md:py-24'>
+    <section className='relative py-16 space-y-4 md:space-y-6 md:py-24'>
       <div
         aria-hidden={true}
         className='absolute inset-0 w-full -translate-y-1/2 -z-20 blur-3xl top-1/2 opacity-20'>
