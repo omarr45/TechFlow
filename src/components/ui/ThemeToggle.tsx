@@ -2,14 +2,12 @@ import React from 'react';
 
 interface Props extends React.ComponentPropsWithoutRef<'button'> {
   theme: 'light' | 'dark';
+  className?: string;
 }
 
-const ThemeToggle = ({ theme, onClick, ...rest }: Props) => {
+const ThemeToggle = ({ theme, onClick, className, ...rest }: Props) => {
   return (
-    <button
-      onClick={onClick}
-      {...rest}
-      className='absolute md:opacity-50 hover:opacity-100 bottom-4 right-4 md:static focus:outline-none ring-offset-4 ring-offset-background/[0.85] focus-visible:ring-4 ring-accent1 rounded'>
+    <button onClick={onClick} {...rest} className={className}>
       {theme === 'dark' ? (
         <svg
           className='w-5 h-5'

@@ -40,27 +40,35 @@ const Navbar = () => {
             TechFlow Pro
           </span>
         </a>
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          type='button'
-          className='inline-flex items-center justify-center w-10 h-10 p-2 text-sm rounded-lg md:hidden hover:bg-text/10 focus:outline-none focus:ring-2 focus:ring-text/30'
-          aria-expanded='false'>
-          <span className='sr-only'>Open main menu</span>
-          <svg
-            className='w-5 h-5'
-            aria-hidden='true'
-            xmlns='http://www.w3.org/2000/svg'
-            fill='none'
-            viewBox='0 0 17 14'>
-            <path
-              stroke='currentColor'
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              strokeWidth='2'
-              d='M1 1h15M1 7h15M1 13h15'
-            />
-          </svg>
-        </button>
+        <div className='space-x-2'>
+          <ThemeToggle
+            onClick={handleThemeChange}
+            theme={theme}
+            className='md:hidden hover:opacity-100 bottom-4 right-4 focus:outline-none ring-offset-4 ring-offset-background/[0.85] focus-visible:ring-4 ring-accent1 rounded'
+          />
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            type='button'
+            className='inline-flex items-center justify-center w-10 h-10 p-2 text-sm rounded-lg md:hidden hover:bg-text/10 focus:outline-none focus:ring-2 focus:ring-text/30'
+            aria-expanded='false'>
+            <span className='sr-only'>Open main menu</span>
+            <svg
+              className='w-5 h-5'
+              aria-hidden='true'
+              xmlns='http://www.w3.org/2000/svg'
+              fill='none'
+              viewBox='0 0 17 14'>
+              <path
+                stroke='currentColor'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth='2'
+                d='M1 1h15M1 7h15M1 13h15'
+              />
+            </svg>
+          </button>
+        </div>
+
         <div
           className={`${
             isOpen ? 'block' : 'hidden'
@@ -69,7 +77,11 @@ const Navbar = () => {
             <Link link='#'>Features</Link>
             <Link link='#'>Reviews</Link>
             <Link link='#'>Pricing</Link>
-            <ThemeToggle onClick={handleThemeChange} theme={theme} />
+            <ThemeToggle
+              onClick={handleThemeChange}
+              theme={theme}
+              className='hidden md:block md:opacity-50 hover:opacity-100 bottom-4 right-4 md:static focus:outline-none ring-offset-4 ring-offset-background/[0.85] focus-visible:ring-4 ring-accent1 rounded md:'
+            />
           </ul>
         </div>
       </div>
