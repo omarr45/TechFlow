@@ -7,14 +7,13 @@ interface Props extends React.ComponentPropsWithoutRef<'button'> {
 
 const ThemeToggle = ({ theme, onClick, className, ...rest }: Props) => {
   return (
-    <button onClick={onClick} {...rest} className={className}>
+    <button onClick={onClick} {...rest} className={className} aria-label='Switch Theme' name='Switch Theme'>
       {theme === 'dark' ? (
         <svg
           className='w-5 h-5'
           fill='none'
           stroke='currentColor'
           strokeWidth={1.5}
-          aria-label='Switch Theme'
           viewBox='0 0 24 24'
           xmlns='http://www.w3.org/2000/svg'
           aria-hidden='true'>
