@@ -40,7 +40,7 @@ const Navbar = () => {
             TechFlow Pro
           </span>
         </a>
-        <div className='space-x-2'>
+        <div className='space-x-4'>
           <ThemeToggle
             onClick={handleThemeChange}
             theme={theme}
