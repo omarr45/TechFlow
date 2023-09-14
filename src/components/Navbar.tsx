@@ -35,7 +35,7 @@ const Navbar = () => {
         <a
           href='/'
           className='flex items-center focus:outline-none ring-offset-8 ring-offset-background/[0.85] focus-visible:ring-4 ring-accent1 rounded'>
-          <img src={logo} className='h-8 mr-3' alt='TechFLow Pro Logo' />
+          <img src={logo} width={32} height={32} className='h-8 mr-3' alt='TechFLow Pro Logo' />
           <span className='self-center text-2xl font-bold whitespace-nowrap'>
             TechFlow Pro
           </span>
