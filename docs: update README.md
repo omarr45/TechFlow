@@ -16,7 +16,7 @@ TechFlow Pro is a landing page for a fictional SaaS company, specializes in digi
 - **Accessibility**: The website is accessible and has a high score on Google Lighthouse.
 - **Performance**: The website is optimized for performance, and has a high score on Google Lighthouse.
 
-![Lighthouse score for TechFlow Pro](https://github.com/omarr45/TechFlow/assets/58887202/92136a6f-d028-4ce8-94cb-878e223864b2)
+![Lighthouse 100 score for TechFlow Pro](https://github.com/omarr45/TechFlow/assets/58887202/d522f798-c4f9-4d5b-8ff7-1012a13aab67)
 
 
 ## Details
