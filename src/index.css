@@ -9,9 +9,9 @@
     --color-background: 0deg 0% 100%;
     --color-text: 222deg 47% 11%;
     --color-accent1: hsl(271deg, 81%, 56%);
-    --color-accent2: hsl(22, 83%, 51%);
+    --color-accent2: hsl(22deg, 83%, 59%);
     --color-accent1: 271deg 81% 56%;
-    --color-accent2: 22deg 83% 51%;
+    --color-accent2: 22deg 83% 55%;
   }
 
   :root[data-theme='dark'] {
